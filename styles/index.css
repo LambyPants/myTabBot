@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer {
+  background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+  color: white;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  text-align: center;
+}
+
+svg {
+  height: 20%;
+  width: 20%;
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 16px 0;
+}
+
+a.extension {
+  color: white;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 197px;
+  margin: 0 auto;
+}
+.light {
+  text-align: center !important;
+}
+
+div.row.center {
+  max-width: 900px;
+}
+
+ul.collection li.collection-item {
+  background: none !important;
+}
+
+.form-container,
+.collection,
+.white-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.white-text {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    text-align: center;
+  }
+}

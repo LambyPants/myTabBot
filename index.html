@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My TabBot</title>
+    <meta
+      name="description"
+      content="TabBot is an easy to configure chrome extension monitors any webpage and alerts you when a chosen element is found on the page. Use it to monitor storefronts, buy buttons, and more."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+
+    <meta property="og:title" content="TabBot" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="" />
+    <meta property="og:image" content="" /> -->
+
+    <!-- <link rel="apple-touch-icon" href="icon.png" /> -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body>
+    <nav id="top" class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#top" class="brand-logo">TabBot</a>
+      </div>
+    </nav>
+    <div class="section no-pad-bot hero" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <svg viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M22 14H21C21 10.13 17.87 7 14 7H13V5.73C13.6 5.39 14 4.74 14 4C14 2.9 13.11 2 12 2S10 2.9 10 4C10 4.74 10.4 5.39 11 5.73V7H10C6.13 7 3 10.13 3 14H2C1.45 14 1 14.45 1 15V18C1 18.55 1.45 19 2 19H3V20C3 21.11 3.9 22 5 22H19C20.11 22 21 21.11 21 20V19H22C22.55 19 23 18.55 23 18V15C23 14.45 22.55 14 22 14M8.68 17.04L7.5 15.86L6.32 17.04L5.14 15.86L7.5 13.5L9.86 15.86L8.68 17.04M17.68 17.04L16.5 15.86L15.32 17.04L14.14 15.86L16.5 13.5L18.86 15.86L17.68 17.04Z"
+          />
+        </svg>
+        <h1 class="header center orange-text">Automate your browser</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">
+            TabBot is an easy to configure hrome extension that monitors any
+            webpage and alerts you when an element is found on the page.
+          </h5>
+        </div>
+        <div class="row center">
+          <a
+            id="download-button"
+            href="#email"
+            class="btn-large waves-effect waves-light orange"
+            >Join mailing list</a
+          >
+          <a
+            href="https://chrome.google.com/webstore/detail/tabbot/fenpkmdmhmdkiaikjomngcphndncnlmm?hl=en&authuser=1"
+            class="btn-flat large extension"
+            >Get the extension</a
+          >
+        </div>
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">flash_on</i>
+              </h2>
+              <h5 class="center">Interested in a custom TabBot?</h5>
+
+              <p class="light">
+                Right now TabBot only monitors the availability of the Xbox
+                Series X and Playstation 5 in US stores, but it was built to
+                easily handle any configuration for any site, anywhere based on
+                a simple JSON object. You simply plug in your target website and
+                a HTML selector and TabBot will refresh the page every 25
+                seconds and alert you when it exists on the page.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">email</i>
+              </h2>
+              <h5 class="center">Join our mailing list</h5>
+              <p class="light">
+                If users express interest, I will build out the backend
+                infrastructure necessary to support custom TabBots - with the
+                goal of eventually making TabBot accessible to non-technical
+                users. Even if you are not familiar with HTML, feel free to sign
+                up for updates on the product as I add things like custom alerts
+                and free product tabs to the free chrome extension.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="https://formspree.io/f/xwkwrodp" method="POST">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" name="_replyto" />
+              <label for="email">Submit your email</label>
+            </div>
+            <button class="btn-large orange" type="submit">
+              Submit <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br /><br />
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text">Current Roadmap</h5>
+            <ul class="collection">
+              <li class="collection-item">
+                Release 1.0.0, a proof of concept which is set up to monitor PS5
+                / Xbox Series X availability
+              </li>
+              <li class="collection-item">
+                Release 2.0.0, allowing users to upload custom configuration
+                files which enables monitoring for any given page for any custom
+                selector
+              </li>
+              <li class="collection-item">
+                Add custom alert configuration (text message, email) and
+                multi-profile configuration to TabBot.
+              </li>
+              <li class="collection-item">
+                Release 3.0.0, allowing non-technical users to configure /
+                customize TabBot in a pure GUI configuration tool.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <a
+              class="orange-text text-lighten-3"
+              href="mailto:appsbylamby@gmail.com"
+              >Contact Lamby</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
