@@ -42,6 +42,13 @@
     <nav id="top" class="light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="#top" class="brand-logo">TabBot</a>
+        <a
+          id="logo-container"
+          class="right"
+          href="https://www.patreon.com/bePatron?u=46693122"
+          class="brand-logo"
+          >Help TabBot Grow</a
+        >
       </div>
     </nav>
     <div class="section no-pad-bot hero" id="index-banner">
@@ -56,9 +63,8 @@
         <h1 class="header center orange-text">Automate your browser</h1>
         <div class="row center">
           <h5 class="header col s12 light">
-            TabBot is an easy to use Chrome extension that monitors any webpage
-            for the existence of a particular element and alerts you when it is
-            found on the page.
+            TabBot is a free, easy to use Chrome extension that monitors any
+            webpage and alerts you when a selected element on the page changes
           </h5>
         </div>
         <div class="row center">
@@ -66,7 +72,7 @@
             id="download-button"
             href="#email"
             class="btn-large waves-effect waves-light orange"
-            >Join mailing list</a
+            >Contact Developer</a
           >
           <a
             href="https://chrome.google.com/webstore/detail/tabbot/fenpkmdmhmdkiaikjomngcphndncnlmm?hl=en&authuser=1"
@@ -87,15 +93,14 @@
               <h2 class="center light-blue-text">
                 <i class="material-icons">flash_on</i>
               </h2>
-              <h5 class="center">Interested in a custom TabBot?</h5>
+              <h5 class="center">Configure custom monitors</h5>
 
               <p class="light">
-                Right now TabBot only monitors the availability of the Xbox
-                Series X and Playstation 5 in US stores, but it was built to
-                easily handle any configuration for any site, anywhere based on
-                a simple JSON object. You simply plug in your target website and
-                a HTML selector and TabBot will refresh the page every 25
-                seconds and alert you when it exists on the page.
+                Life is too short to manually refresh webpages. Easily configure
+                a custom TabBot monitor by selecting an area of a webpage and
+                setting a refresh time interval. You'll be notified with a
+                before vs. after alert whenever the selected area changes or is
+                no longer found.
               </p>
             </div>
           </div>
@@ -105,14 +110,21 @@
               <h2 class="center light-blue-text">
                 <i class="material-icons">email</i>
               </h2>
-              <h5 class="center">Join our mailing list</h5>
+              <h5 class="center">Help TabBot grow</h5>
               <p class="light">
-                If users express interest, I will build out the backend
-                infrastructure necessary to support custom TabBots - with the
-                goal of eventually making TabBot accessible to non-technical
-                users. Even if you are not familiar with HTML, feel free to sign
-                up for updates on the product as I add things like custom alerts
-                and new product tabs to the free Chrome extension.
+                Have any ideas on how to improve TabBot? I'd love to hear from
+                you - simply submit a message using the form below.
+                Additionally, you can help support this project by becoming a
+                contributor:
+                <a
+                  href="https://www.patreon.com/bePatron?u=46693122"
+                  data-patreon-widget-type="become-patron-button"
+                  >Become a Patron!</a
+                >
+                <script
+                  async
+                  src="https://c6.patreon.com/becomePatronButton.bundle.js"
+                ></script>
               </p>
             </div>
           </div>
@@ -123,7 +135,15 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="email" type="email" class="validate" name="_replyto" />
-              <label for="email">Submit your email</label>
+              <label for="email">Your email</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea
+                id="message"
+                class="materialize-textarea"
+                name="message"
+              ></textarea>
+              <label for="message">Your message</label>
             </div>
             <button class="btn-large orange" type="submit">
               Submit <i class="material-icons right">send</i>
@@ -138,24 +158,33 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h5 class="white-text">Current Roadmap</h5>
+            <h5 class="white-text">
+              Current Roadmap (subject to change based on feedback)
+            </h5>
             <ul class="collection">
-              <li class="collection-item">
-                Release 1.0.0, a proof of concept which is set up to monitor PS5
-                / Xbox Series X availability
+              <li class="collection-item done">
+                Release customizable extension which allows users to configure
+                monitors; include demo monitors for ps5 and xbox series x to
+                showcase functionality (DONE)
               </li>
               <li class="collection-item">
-                Release 2.0.0, allowing users to upload custom configuration
-                files which enables monitoring for any given page for any custom
-                selector
+                Improve monitor alert detection to handle unexpected xpath
+                changes
+              </li>
+              <li class="collection-item">Add email alerts</li>
+              <li class="collection-item">
+                Unlimited monitor storage (localstorage is limited to 5mb)
               </li>
               <li class="collection-item">
-                Add custom alert configuration (text message, email) and
-                multi-profile configuration to TabBot.
+                Alert filters (e.g., only fire an alert when selected element
+                contains the word "available" or a value < $400)
               </li>
               <li class="collection-item">
-                Release 3.0.0, allowing non-technical users to configure /
-                customize TabBot in a pure GUI configuration tool.
+                Page screenshots before / after when elements change
+              </li>
+              <li class="collection-item">
+                Cloud-based monitoring so you don't need to keep your browser
+                open
               </li>
             </ul>
           </div>
@@ -165,7 +194,7 @@
             <a
               class="orange-text text-lighten-3"
               href="mailto:appsbylamby@gmail.com"
-              >Contact Lamby (Creator)</a
+              >Email developer appsbylamby@gmail.com</a
             >
           </div>
         </div>
